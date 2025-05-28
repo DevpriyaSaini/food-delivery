@@ -3,7 +3,7 @@ import './verify.css'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import axios from 'axios';
 import { useEffect } from 'react';
-const url=" http://localhost:4000";
+const url=" https://food-delivery-backend-sydz.onrender.com";
 
     
 
