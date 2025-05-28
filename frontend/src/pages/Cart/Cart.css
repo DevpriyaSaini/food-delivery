@@ -377,5 +377,8 @@ hr {
   .cart-bottom {
     flex-direction: column;
   }
+    .card-promocode-input input{
+        width:60%;
+    }
 }
 
