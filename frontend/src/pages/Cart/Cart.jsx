@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import'./Cart.css'
 import { StoreContext } from '../../Context/StoreContext'
 import { Link } from 'react-router-dom';
-const url="http://localhost:4000";
+const url="https://food-delivery-backend-sydz.onrender.com";
 function Cart() {
   const{cartItems,food_list,removeCart,gettotal}=useContext(StoreContext)
   return (
