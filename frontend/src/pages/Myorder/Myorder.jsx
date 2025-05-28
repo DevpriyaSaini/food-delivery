@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { StoreContext } from '../../Context/StoreContext';
 import { useState } from 'react';
 import { useEffect } from 'react';
-const url="http://localhost:4000";
+const url="https://food-delivery-backend-sydz.onrender.com";
 
 function Myorder() {
     const {token}=useContext(StoreContext);
