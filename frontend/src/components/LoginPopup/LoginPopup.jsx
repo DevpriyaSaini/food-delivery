@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './LoginPopup.css'
-const url=" http://localhost:4000";
+const url=" https://food-delivery-backend-sydz.onrender.com";
 import axios from 'axios'
 import { useContext } from 'react';
 import { StoreContext } from '../../Context/StoreContext';
