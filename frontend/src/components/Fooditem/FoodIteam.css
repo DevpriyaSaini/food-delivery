@@ -1,0 +1,155 @@
+.Food-Iteam{
+    width: 300px;
+    margin:auto;
+    border-radius: 15px;
+    box-shadow:0px 0px 10px #000015 ;
+    transition:0.3s;
+    animation: fadeIn 1s;
+
+}
+.foot-item-con img{
+    width:300px;
+    height:230px;
+    border-radius: 15px 15px 0px 0px;
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.food-item-name-rating img{
+    width: 100px;
+}
+.fooditem-info{
+   margin-left: 10px;
+}
+.food-item-name-rating p{
+    font-size:20px ;
+    font-weight: 500;
+}
+.food-item-desc{
+    color: #676767;
+    font-size:15px ;
+}
+.food-item-price{
+    color: tomato;
+    font-size: 22px;
+    font-weight: 500;
+    margin:10px 0px ;
+}
+
+.foot-item-con {
+  position: relative; /* Required for absolute positioning of child elements */
+}
+
+.foot-item-con .add {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 15px; /* Adjust this value as needed */
+  right: 15px;  /* Positions from the right side */
+  cursor: pointer;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.foot-item-con .add:hover {
+  transform: scale(1.1);
+  background: #f8f8f8;
+}
+
+/* For the counter controls when quantity > 0 */
+.counter-controls {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.counter-controls .counter-icon {
+  cursor: pointer;
+  color: tomato;
+  font-size: 14px;
+}
+
+.counter-value {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+.counter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.counter-icon {
+  cursor: pointer;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.minus-icon {
+  color: #ff4444;
+  background-color: #ff4444; /* Red color */
+}
+
+.minus-icon:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.plus-icon {
+  color: white;
+  background-color: #00C851; /* Green color */
+}
+
+.plus-icon:hover {
+  background-color: #007E33; /* Darker green on hover */
+}
+
+.counter-value {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+@media(max-width:310px){
+  .Food-Iteam{
+    width: 200px;
+    margin:auto;
+    border-radius: 15px;
+    box-shadow:0px 0px 10px #000015 ;
+    transition:0.3s;
+    animation: fadeIn 1s;
+
+}
+.foot-item-con img{
+    width:200px;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+}

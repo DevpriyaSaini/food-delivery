@@ -1,0 +1,144 @@
+/* Base styles */
+.place-order {
+  max-width: 1300px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  padding: 0 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Left side (Delivery Information) */
+.place-order-left {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.place-order-left .title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.place-order-left input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.place-order-left input:focus {
+  border-color: #f15a29;
+}
+
+.multi-feilds {
+  display: flex;
+  gap: 20px;
+}
+
+.multi-feilds input {
+  flex: 1;
+}
+
+/* Right side (Cart Totals) */
+.place-order-right {
+  flex: 1;
+  /* min-width: 300px; */
+ 
+   
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cart-bottoms {
+     width: 30vw;
+  background: #fff;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-total h2 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.cart-total-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-total-detail p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cart-total-detail hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Button */
+.cart-bottoms button {
+  width: 100%;
+  padding: 14px;
+  background: #f15a29;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cart-bottoms button:hover {
+  background: #d14d23;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-bottoms{
+    width: 60vw;
+  }
+  .place-order {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .place-order-left,
+  .place-order-right {
+    width: 100%;
+    min-width: auto;
+    padding: 20px;
+  }
+  .multi-feilds {
+    flex-direction: column;
+    gap: 0;
+  }
+}

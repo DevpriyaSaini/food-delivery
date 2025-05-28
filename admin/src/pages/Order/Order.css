@@ -1,0 +1,173 @@
+/* Order Page CSS */
+.order {
+  padding: 40px;
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.orderitem {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 20px;
+  align-items: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orderitem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.orderitem img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-item-food {
+  margin: 0 0 10px 0;
+  color: #555;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.order-item-name {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.order-item-address {
+  margin: 0 0 8px 0;
+  color: #666;
+  line-height: 1.4;
+}
+
+.order-item-address p {
+  margin: 0;
+}
+
+.phonenumber {
+  color: #666;
+  margin: 8px 0 0 0 !important;
+}
+
+.orderitem > p:last-of-type {
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  align-self: center;
+}
+
+.orderitem select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  align-self: center;
+  width: 260px;
+}
+
+.orderitem select:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+/* Status Colors */
+.orderitem select option[value="Food Processing"] {
+  color: #ff9500;
+}
+
+.orderitem select option[value="Out for delivery"] {
+  color: #007bff;
+}
+
+.orderitem select option[value="Delivered"] {
+  color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .orderitem {
+    grid-template-columns: 100px 1fr;
+  }
+  
+  .orderitem > p:last-of-type,
+  .orderitem select {
+    grid-column: span 2;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .order {
+    padding: 15px;
+  }
+  
+  .orderitem {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .orderitem img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+  }
+  
+  .orderitem > p:last-of-type,
+  .orderitem select {
+    grid-column: auto;
+  }
+  .orderitem select{
+    width:50%
+  }
+}
+
+@media (max-width: 400px) {
+  .order h3 {
+    font-size: 1.5rem;
+  }
+  
+  .order-item-food {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 315px) {
+     .orderitem img {
+    width: 50px;
+    height: 70px;
+    justify-self: center;
+  }
+  .order h3 {
+    font-size: 1.5rem;
+  }
+  
+  .order-item-food {
+    font-size: 0.9rem;
+  }
+  .orderitem select{
+    width:50%
+  }
+}
