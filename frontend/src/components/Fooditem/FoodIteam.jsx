@@ -3,7 +3,7 @@ import './FoodIteam.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { StoreContext } from '../../Context/StoreContext';
-const url=" http://localhost:4000";
+const url=" https://food-delivery-backend-sydz.onrender.com";
 function FoodIteam({id,name,Price,description,image ,rating}) {
     // const [counter, setCounter]=useState(0);
     const {cartItems,addToCart,removeCart}=useContext(StoreContext);
