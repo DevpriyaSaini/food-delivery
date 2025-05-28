@@ -4,7 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import {toast}from 'react-toastify'
 import { useEffect } from 'react';
-const url="http://localhost:4000";
+const url="https://food-delivery-backend-sydz.onrender.com";
 
 function Order() {
   const [orders,setOrders]=useState([]);
