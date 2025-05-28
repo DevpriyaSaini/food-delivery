@@ -4,7 +4,7 @@ import { StoreContext } from '../../Context/StoreContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 import axios from 'axios';
-const url="http://localhost:4000";
+const url="https://food-delivery-backend-sydz.onrender.com";
 
 function PlaceOrder() {
   const Navigate= useNavigate();
