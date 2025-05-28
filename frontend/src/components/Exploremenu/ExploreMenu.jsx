@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './ExploreMenu.css'
+import './Exploremenu.css';
 import { menu_list } from '../../assets/assests'
 
 function ExploreMenu({ category, setCategory }) {
