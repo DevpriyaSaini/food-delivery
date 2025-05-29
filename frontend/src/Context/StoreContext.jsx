@@ -30,16 +30,25 @@ const removeCart =async(itemId) => {
   }
 };
 
-const gettotal=()=>{
-    let totalammount=0;
-    for(const item in cartItems){
-      if(cartItems[item]>0){
-        let iteminfo=food_list.find((product)=>product._id===item);
-      totalammount+=iteminfo.Price*cartItems[item];
+const gettotal = () => {
+  let totalammount = 0;
+
+  for (const item in cartItems) {
+    if (cartItems[item] > 0) {
+      let iteminfo = food_list.find(
+        (product) => String(product._id) === String(item)
+      );
+
+      if (!iteminfo) {
+        console.warn(`Product with ID ${item} not found in food_list.`);
+        continue;
       }
-      
+
+      totalammount += iteminfo.Price * cartItems[item];
     }
-    return totalammount;
+  }
+
+  return totalammount;
 }
 
 
