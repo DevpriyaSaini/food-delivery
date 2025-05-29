@@ -38,7 +38,7 @@ function Myorder() {
                           return item.name+" x"+item.quantity
                         }
                         else{
-                          return item.name+"x"+item.quantity+" , "
+                          return item.name+" x"+item.quantity+" , "
                         }
                       })}</p>
                       <p>${order.amount}.00</p>
