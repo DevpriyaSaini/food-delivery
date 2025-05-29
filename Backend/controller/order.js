@@ -95,7 +95,7 @@ async function verify(req,res) {
 async function userorder(req,res) {
     
     try {
-        const orders=await ordermodel.find({userId:req.body.userId});
+        const orders=await ordermodel.find({userId:req.body.userId,payment:true});
         res.json({success:true,data:orders})
     } catch (error) {
         res.json({success:false,message:"Error"})
@@ -104,7 +104,7 @@ async function userorder(req,res) {
 //admin order
 async function listorder(req,res) {
     try {
-        const orders=await ordermodel.find({});
+        const orders=await ordermodel.find({payment:true});
         res.json({success:true,data:orders})
 
     } catch (error) {
