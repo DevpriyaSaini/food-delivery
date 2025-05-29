@@ -52,7 +52,7 @@ const placeorder= async(event)=>{
  }
     
    } catch (error) {
-    res.json({msg:"error"});
+   console.log(error);
     
    } 
 }
