@@ -12,10 +12,6 @@ async function placeorder(req, res) {
         if (!userId || !Array.isArray(items) || items.length === 0 || !amount || !address) {
             return res.status(400).json({ success: false, message: "Invalid input data" });
         }
-        if (amount < 43) {
-        alert("Minimum order amount must be at least ₹43.");
-        return;
-        }
 
         const order = await ordermodel.create({
             userId,
