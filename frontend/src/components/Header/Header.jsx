@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className='header'>
         <div className="header-cont">
-            <h2> Oreder your Favourite food here</h2>
+            <h2> Order your Favourite food here</h2>
             <p> choose from a diverse menu featuring a delectable array of crafted with the finest ingredients and culinary 
                 expertise. Our mission is to satisfy your cravings and elevate
                 your dining experience,one delicious meal at a time  </p>
