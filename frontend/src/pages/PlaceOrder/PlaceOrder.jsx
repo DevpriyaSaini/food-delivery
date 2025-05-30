@@ -37,6 +37,13 @@ const placeorder= async(event)=>{
       orderitem.push(itemInfo);
     }
   });
+
+     let amount = gettotal() + 2;
+
+if (amount < 43) {
+    alert("Minimum order amount must be at least ₹43.");
+    return;
+}
  let orderData={
   address:data,
   items:orderitem,
