@@ -29,7 +29,7 @@ async function addfood(req,res){
 async function listfood(req,res) {
   
 try {
-  const foods=await foodmodel.find({});
+  const foods=await foodmodel.find({}).sort({_id:1});
   res.json({sucess:true,data:foods})
 } catch (error) {
   console.log(error);
