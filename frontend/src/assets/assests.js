@@ -11,7 +11,7 @@ export const menu_list=[
          menu_image:"https://imgs.search.brave.com/T0WTBtFdsBDJcruNMHnhX_KXK_U7qgYWGk2tRixQusU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQw/OTkxOTg1OC9waG90/by9kZWxpY2lvdXMt/aW5kaWFuLXN0cmVl/dC1mb29kLWVnZy1y/b2xscy1pcy1yZWFk/eS10by1lYXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTdi/LXVUd1I4cW1FU1Zf/blAzUnNoNHFxS0Nh/eTR2c0dfQjdqMFVo/YU1GUFk9"
     },
     {
-         menu_name:"Deserts",
+         menu_name:"Desert",
          menu_image:"https://imgs.search.brave.com/Lqwgi4cpFUx-gKziDdvD-VsfuoEiMOv-_ycS1YR17IY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzQwLzg2Lzc2/LzM2MF9GXzE0MDg2/NzY3NV9samtWTVow/eDlNZG5KUFR0bTRT/dzh3N3BKVFpMS09s/dy5qcGc"
     },
     {

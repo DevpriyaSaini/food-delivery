@@ -71,9 +71,6 @@ const StoreContextProvider = (props) => {
     setCarditem(responce.data.cartData);
   }
 
-  useEffect(() => {
-    console.log(cartItems);
-  }, [cartItems]);
 
   useEffect(() => {
     async function loadData() {
