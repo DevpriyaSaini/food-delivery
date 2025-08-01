@@ -4,7 +4,10 @@ import { StoreContext } from '../../Context/StoreContext'
 import { Link } from 'react-router-dom';
 const url="https://food-delivery-backend-sydz.onrender.com";
 function Cart() {
-  const{cartItems,food_list,removeCart,gettotal}=useContext(StoreContext)
+  const{cartItems,food_list,removeCart,gettotal}=useContext(StoreContext);
+  if(!cartItems){
+    return ;
+  }
   return (
   <div className='cart'>
     <div className="cart-item">

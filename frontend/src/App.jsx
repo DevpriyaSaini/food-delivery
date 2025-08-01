@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
 import Home from './pages/Home/Home';
 import Cart from './pages/Cart/Cart';
@@ -16,13 +16,8 @@ function App() {
     <div className='app'>
       <Navbar setShowLogin={setShowLogin} />  {/* Pass the setter function */}
       {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/order' element={<PlaceOrder />} />
-        <Route path='//verify' element={<Verify/>} />
-        <Route path='/myorders'element={<Myorder/>}/>
-      </Routes>
+
+      <Outlet />
       <Footer />
     </div>
   );

@@ -23,6 +23,9 @@ function Myorder() {
        fetchorder(); 
     }
   },[token])
+  if(!data){
+    return null
+  }
 
 
   return (

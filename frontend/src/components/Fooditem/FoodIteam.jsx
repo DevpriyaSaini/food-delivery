@@ -7,11 +7,14 @@ const url=" https://food-delivery-backend-sydz.onrender.com";
 function FoodIteam({id,name,Price,description,image ,rating}) {
     // const [counter, setCounter]=useState(0);
     const {cartItems,addToCart,removeCart}=useContext(StoreContext);
+    if(!cartItems){
+      return ;
+    }
   return (
     <div className='Food-Iteam'>
         <div className="foot-item-con">
             <img src={url+"/Image/"+image} alt="" className="food-item-img" />
-           {!cartItems[id]? (
+           { !cartItems[id]? (
   <FontAwesomeIcon 
     icon={faPlus} 
     onClick={() =>addToCart(id) }
