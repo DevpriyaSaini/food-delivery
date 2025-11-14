@@ -16,7 +16,7 @@ function verify() {
     async function verifypayment(req,res) {
         const responce=await axios.post(url+"/api/order/verify",{success,orderId});
         if(responce.data.success){
-            navigate("/myorders")
+            navigate("/myorders")  
         }
         else{
             navigate("/");
